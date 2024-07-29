@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2A3170;
+    color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1,
+.main-content h2 {
+    color: #2E3A59;
+}
+
+.main-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.project-section {
+    margin: 20px 0;
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    margin: 0;
+    color: #2E3A59;
+}
+
+.project-description p {
+    margin: 5px 0;
+}
+
+.project-description a {
+    color: #2E3A59;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2A2170;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #2E3A59;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+    max-width: 100px;    
+}
+
+@media (max-width: 768px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item img {
+        margin-bottom: 10px;
+    }
+    footer p, footer div{
+        display: flex;
+        flex-direction: row;
+    }
+    .foot{
+        position: relative;
+    }
+    
+}
