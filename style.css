@@ -105,9 +105,24 @@ footer {
 
 .portfolio-items .item p {
     font-size: 15px;
-    color: #000;
     margin-top: 12px;
     font-weight: bold;
+}
+.item a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ .view{
+    background-color: #818181;
+    padding: 7px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.view a{
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Contact Page Styles */
