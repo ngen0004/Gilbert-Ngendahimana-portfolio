@@ -10,35 +10,51 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="GNG"></a>
+            <a href="index.html"><img src="images/logo.png" alt="GNG Logo"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button class="menu-btn" aria-label="Open Menu">
+            <img src="images/icon-menu.svg" alt="Menu Icon">
+        </button>
+        <div class="mobile-menu">
+            <button class="close-btn" aria-label="Close Menu">
+                <img src="images/icon-menu-close.svg" alt="Close Icon">
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="main-content">
+
+    <main class="contact">
         <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" name="firstName" placeholder="First Name" required>
-            <input type="text" name="lastName" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+        <div class="icons">
+            <a href="https://github.com/ngen0004"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gilbert-ngendahimana-704407115"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        </div>           
+        <form action="mailto:gilbertnge64@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <input type="text" class="in" placeholder="First Name" required>
+                <input type="text" class="in" placeholder="Last Name" required>
+            </div>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-    </div>
+        
+    </main>
+
     <footer>
         <p>&copy; 2024 Gilbert Ngendahimana</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
     </footer>
     <script src="script.js"></script>
 </body>
